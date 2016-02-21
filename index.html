@@ -29,6 +29,45 @@
           <br>
           <br>
           <br>
+           <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Suscríbete</a>
+
+                            <!-- Modal Structure -->
+                                    <div id="modal1" class="modal" style="padding:1%;">
+                                 <div >
+                                  <h4 >Formulario de Suscripción</h4>
+                                    <div class="row">
+                                <form class="col s12">
+                                  <div class="row">
+                                    <div class="input-field col s6">
+                                      <input id="first_name" type="text" class="validate">
+                                      <label for="first_name">Nombres</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                      <input id="last_name" type="text" class="validate">
+                                      <label for="last_name">Apellidos</label>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="input-field col s12">
+                                      <input id="email" type="email" class="validate">
+                                      <label for="email">Correo Electrónico</label>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="input-field col s12">
+                                      <input id="email" type="email" class="validate">
+                                      <label for="email">Telefono</label>
+                                    </div>
+                                  </div>
+                                </form>
+                              </div>
+        
+                            </div>
+                            <div class="modal-footer">
+                              <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Enviar</a>
+                              <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancelar</a>
+                            </div>
+                          </div>
         <section class="container">
             <div class="row">
                 <div class="col l4 m6 s12">
@@ -39,47 +78,7 @@
                             <li><a href="#">Link 2</a></li>
                             <li><a href="#">Link 3</a></li>
                             <li><a href="#">Link 4</a></li>
-                            <li><a href="#">Link 5</a></li>
-  <!-- Modal Trigger -->
-         
-  <a class="modal-trigger waves-effect waves-light btn" href="#modal1">Modal</a>
-
-  <!-- Modal Structure -->
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-      <h4>Formulario de Suscripción</h4>
-      <div class="row">
-    <form class="col s12">
-      <div class="row">
-        <div class="input-field col s6">
-          <input id="first_name" type="text" class="validate">
-          <label for="first_name">Nombres</label>
-        </div>
-        <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate">
-          <label for="last_name">Apellidos</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="email" type="email" class="validate">
-          <label for="password">Correo Electrónico</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="telefono" type="telefono" class="validate">
-          <label for="telefono">Teléfono</label>
-        </div>
-      </div>
-    </form>
-  </div>        
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Enviar</a>
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Cancelar</a>
-    </div>
-  </div> 
+                            <li><a href="#">Link 5</a></li> 
                         </ul>
                     </nav>
                 </div>
@@ -183,7 +182,11 @@
         <script type="text/javascript" src="js/materialize.min.js"></script>
           <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
-          
+          <script>
+            $(document).ready(function(){
+                $('.modal-trigger').leanModal();
+            });
+          </script>
         
     </body>
 </html>
